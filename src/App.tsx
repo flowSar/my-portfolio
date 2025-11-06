@@ -7,6 +7,10 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 function App() {
+  const dark = localStorage.getItem("dark");
+  if (dark) {
+    document.documentElement.classList.add("dark");
+  }
   return (
     <>
       <div className='text-block dark:bg-black dark:text-white h-screen'>

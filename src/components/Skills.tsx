@@ -18,7 +18,7 @@ function Skills() {
         <h1 className='text-4xl font-bold'>Technologies & Skills</h1>
         <h3 className='text-primary'>Tools and technologies I work with</h3>
       </div>
-      <div className='grid grid-cols-auto-fill gap-2 py-8'>
+      <div className='grid grid-cols-auto-fill gap-6 py-8'>
         <SkillCard
           title='Frontend'
           skills={frontendSkills}

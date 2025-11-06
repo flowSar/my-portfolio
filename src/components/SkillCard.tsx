@@ -8,7 +8,7 @@ interface SkillCardProps {
 }
 function SkillCard({ skills, title, fg, bg }: SkillCardProps) {
   return (
-    <div className='px-4 py-4   rounded-lg shadow-lg  shadow-gray-300 hover:shadow-xl duration-200 min-h-[180px]'>
+    <div className='dark:bg-dark-blue-100 px-4 py-4 rounded-lg shadow-lg dark:shadow-dark-blue shadow-gray-300 hover:shadow-xl duration-200 min-h-[180px]'>
       <h1 className={twMerge("font-bold text-blue-600 mb-4 text-xl", fg)}>
         {title}
       </h1>

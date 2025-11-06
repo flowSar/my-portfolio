@@ -27,7 +27,7 @@ function TextInput({
 }: TextInputProps) {
   return (
     <div className='flex flex-col'>
-      <label className='text-sm text-primary' htmlFor={name}>
+      <label className='text-sm text-primary dark:text-white' htmlFor={name}>
         {label}
       </label>
       {textInputType === "input" ? (
@@ -38,7 +38,7 @@ function TextInput({
           id={name}
           name={name}
           placeholder={placeholder}
-          className='py-3 px-4 focus:outline-none border border-gray-300 rounded-lg mt-2'
+          className='py-3 px-4 focus:outline-none border dark:bg-dark-blue-100 border-gray-300 rounded-lg mt-2'
         />
       ) : (
         <textarea
@@ -47,7 +47,7 @@ function TextInput({
           id={name}
           name={name}
           placeholder={placeholder}
-          className='py-3 px-4 focus:outline-none border border-gray-300 rounded-lg mt-2'
+          className='py-3 px-4 focus:outline-none border dark:bg-dark-blue-100 border-gray-300 rounded-lg mt-2'
           rows={rows}
         ></textarea>
       )}

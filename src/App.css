@@ -3,9 +3,12 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-primary: rgb(75, 85, 99);
+  /* --color-primary: rgb(75, 85, 99); */
+  --color-primary: rgb(156, 163, 175);
   --color-light-gray: rgb(249, 250, 251);
-  --grid-cols-auto-fill: repeat(auto-fill, minmax(410px, 1fr));
+  --color-dark-blue: rgb(17, 24, 39);
+  --color-dark-blue-100: rgb(31, 41, 55);
+  --grid-cols-auto-fill: repeat(auto-fill, minmax(310px, 1fr));
   --grid-min: 400px;
 }
 

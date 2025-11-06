@@ -16,8 +16,8 @@ function ProjectCard({
   viewProjectLink,
 }: ProjectCardProps) {
   return (
-    <div className='flex flex-col rounded-xl mt-8 shadow-md shadow-gray-300 hover:shadow-xl duration-200 overflow-hidden'>
-      <div className='w-full h-[200px] bg-gradient-to-r from-green-400 to-blue-600'></div>
+    <div className='dark:bg-dark-blue-100 flex flex-col rounded-xl mt-8 shadow-md dark:shadow-dark-blue shadow-gray-300 hover:shadow-xl duration-200 overflow-hidden'>
+      <div className='w-full h-[200px] bg-linear-to-r from-green-400 to-blue-600'></div>
       <div className='px-4 py-4 space-y-3'>
         <h2 className='font-bold text-xl'>{title}</h2>
         <p className='text-primary'>{description}</p>

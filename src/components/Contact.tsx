@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import TextInput from "./TextInput";
+import emailjs from "emailjs-com";
 
 function Contact() {
   const [form, setForm] = useState({
@@ -15,10 +16,10 @@ function Contact() {
   return (
     <section
       id='contact'
-      className=' mt-10 pt-20 w-full flex flex-col items-center px-4 bg-light-gray  '
+      className='dark:bg-dark-blue-100 mt-10 pt-20 w-full flex flex-col items-center px-4 bg-light-gray  '
     >
       <h1 className=' text-4xl font-bold'>Get In Touch</h1>
-      <div className='w-full md:w-3xl  mt-10 px-8 py-4 bg-white shadow-md shadow-gray-300 space-y-4'>
+      <div className='rounded-lg w-full md:w-3xl  mt-10 mb-30 px-8 py-8 dark:bg-dark-blue  bg-white shadow-md dark:shadow-dark-blue shadow-gray-300 space-y-4'>
         <TextInput
           label='Name'
           name={"name"}
@@ -49,7 +50,7 @@ function Contact() {
         />
         <button
           onClick={submitForm}
-          className='w-full py-3 px-8 rounded-xl bg-gradient-to-r from-blue-600 to-purple-700 text-white'
+          className='w-full py-3 px-8 rounded-xl bg-linear-to-r from-blue-600 to-purple-700 text-white'
         >
           Send Message
         </button>

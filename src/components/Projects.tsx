@@ -43,7 +43,7 @@ function Projects() {
     <section id='projects px-4'>
       <div className='flex flex-col items-center'>
         <h1 className='text-4xl'>Featured Projects</h1>
-        <div className='grid grid-cols-auto-fill space-y-2 md:space-x-6 w-full px-4 overflow-hidden'>
+        <div className='grid grid-cols-auto-fill gap-6 w-full px-4 overflow-hidden'>
           {projects.map((project) => {
             return (
               <ProjectCard
