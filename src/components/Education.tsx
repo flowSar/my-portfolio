@@ -11,10 +11,11 @@ function Education() {
           {/* // education */}
           <div className='py-4 px-6 rounded-md dark:bg-dark-blue space-y-6 mt-10 bg-white shadow-md shadow-black/10'>
             <h1 className='text-xl font-bold'>
-              Bachelor's Degree in Computer Science
+              Bachelor’s degree in Physical Sciences with a specialization in
+              Electronics.
             </h1>
             <div className='flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0'>
-              <h3>University Name</h3>
+              <h3>Hassan II University</h3>
               <div className='py-2 px-4 bg-gray-100 dark:bg-blue-950 rounded-md'>
                 2020-2024
               </div>

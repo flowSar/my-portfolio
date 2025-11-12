@@ -2,6 +2,7 @@ import ProjectCard from "./ProjectCard";
 import ProfolioImage from "../assets/images/profolio.png";
 import SkillHubImage from "../assets/images/skill-hub-home.png";
 import BlogPOstImage from "../assets/images/blog-post.png";
+import XcloneImage from "../assets/images/x-clone.png";
 
 function Projects() {
   const projects = [
@@ -30,7 +31,7 @@ function Projects() {
     {
       id: 125,
       title: "Simple X clone",
-      image: "",
+      image: XcloneImage,
       description:
         "A social media clone built with React, Inertia, and Laravel for posting, liking, and commenting.",
       technologies: ["React.js", "Inertia", "Laravel"],
