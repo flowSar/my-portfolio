@@ -1,4 +1,5 @@
 import type { ChangeEvent, ChangeEventHandler } from "react";
+import { twMerge } from "tailwind-merge";
 
 interface TextInputProps {
   label?: string;
@@ -38,7 +39,10 @@ function TextInput({
           id={name}
           name={name}
           placeholder={placeholder}
-          className='py-3 px-4 focus:outline-none border dark:bg-dark-blue-100 border-gray-300 rounded-lg mt-2'
+          className={twMerge(
+            "py-3 px-4 focus:outline-none border dark:bg-dark-blue-100 border-gray-300 rounded-lg mt-2",
+            className
+          )}
         />
       ) : (
         <textarea

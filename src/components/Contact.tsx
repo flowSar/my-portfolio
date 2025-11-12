@@ -62,6 +62,7 @@ function Contact() {
             Send Message
           </button>
         </form>
+        <p>{status}</p>
       </div>
       <SocialMedia />
     </section>
