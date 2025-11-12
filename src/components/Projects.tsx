@@ -14,7 +14,7 @@ function Projects() {
         "Platform connecting clients and service providers, enabling service discovery, management, and efficient matching.",
       technologies: ["React.js", "flask", "firebase", "tailwindCss"],
       githubLink: "https://github.com/flowSar/skillhub",
-      viewProjectLink: "",
+      viewProjectLink: "https://skillhub-delta.vercel.app/",
       color: "red-300",
     },
     {
@@ -69,7 +69,7 @@ function Projects() {
         "Personal portfolio website showcasing projects, skills, and achievements built with React and TailwindCSS.",
       technologies: ["React.js", "TailwindCSS", "Html", "Mongodb"],
       githubLink: "https://github.com/flowSar/my-portfolio",
-      viewProjectLink: "",
+      viewProjectLink: "https://sar-profolio.vercel.app/",
       color: "red-300",
     },
   ];
