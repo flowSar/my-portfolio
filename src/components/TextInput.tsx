@@ -1,4 +1,4 @@
-import type { ChangeEvent, ChangeEventHandler } from "react";
+import type { ChangeEvent } from "react";
 import { twMerge } from "tailwind-merge";
 
 interface TextInputProps {
