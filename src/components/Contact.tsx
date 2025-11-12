@@ -1,6 +1,6 @@
 import { useRef, useState, type ChangeEvent } from "react";
 import TextInput from "./TextInput";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import SocialMedia from "./SocialMedia";
 
 function Contact() {
@@ -13,10 +13,10 @@ function Contact() {
 
     try {
       const result = await emailjs.sendForm(
-        "service_k71lfcu", // ← your Service ID
-        "template_q3whoh4", // ← your Template ID
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         form.current!,
-        "9tybtJDm1F808PWEe" // ← your Public Key
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
       if (result.status === 200) {
