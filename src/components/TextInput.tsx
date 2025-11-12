@@ -8,7 +8,7 @@ interface TextInputProps {
   type?: string;
   textInputType?: "input" | "textarea";
   rows?: number;
-  value: string;
+  value?: string;
   onChangeInputValue?: (event: ChangeEvent<HTMLInputElement>) => void;
   onChangeTextareaValue?: (event: ChangeEvent<HTMLTextAreaElement>) => void;
 }

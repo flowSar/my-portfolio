@@ -2,7 +2,6 @@ import SkillCard from "./SkillCard";
 
 function Skills() {
   const frontendSkills = [
-    "Python",
     "React.js",
     "HTML",
     "CSS",
@@ -10,8 +9,9 @@ function Skills() {
     "Tailwind CSS",
   ];
   const mobileSkills = ["Flutter"];
-  const backendSkills = ["Flask", "Express.js", "Laravel"];
-  const databaseSkills = ["MySQL", "PostgresSQL", "Firebase"];
+  const backendSkills = ["Python", "Flask", "Express.js", "Laravel"];
+  const databaseSkills = ["MySQL", "PostgresSQL", "Firebase", "mongodb"];
+  const devopsSkills = ["Git", "Docker"];
   return (
     <section id='skills' className='flex flex-col px-4 mt-8 space-y-4'>
       <div className='flex flex-col items-center space-y-4'>
@@ -42,6 +42,12 @@ function Skills() {
           skills={databaseSkills}
           fg='text-orange-700'
           bg='bg-orange-200'
+        />
+        <SkillCard
+          title='Tools & Deployment'
+          skills={devopsSkills}
+          fg='text-red-700'
+          bg='bg-red-200'
         />
       </div>
     </section>

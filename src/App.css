@@ -18,6 +18,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .skills-grid {
   /* display: flex;
   flex-direction: row;
