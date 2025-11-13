@@ -60,7 +60,7 @@ function Header() {
           {menuOpen ? (
             <CloseIcon w='8' h='8' onClick={handleManuOpen} />
           ) : (
-            <MenuIcon h='8' w='8' onClick={handleManuOpen} />
+            <MenuIcon className='w-8 h-8' onClick={handleManuOpen} />
           )}
         </div>
         <div

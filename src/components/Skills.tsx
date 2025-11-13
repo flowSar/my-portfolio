@@ -2,14 +2,14 @@ import SkillCard from "./SkillCard";
 
 function Skills() {
   const frontendSkills = [
-    "React.js",
     "HTML",
     "CSS",
+    "React.js",
     "JavaScript/TypScript",
     "Tailwind CSS",
   ];
   const mobileSkills = ["Flutter"];
-  const backendSkills = ["Python", "Flask", "Express.js", "Laravel"];
+  const backendSkills = ["Python", "Flask", "Node.js", "Express.js", "Laravel"];
   const databaseSkills = ["MySQL", "PostgresSQL", "Firebase", "mongodb"];
   const devopsSkills = ["Git", "Docker"];
   return (
