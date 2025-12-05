@@ -8,6 +8,7 @@ interface ProjectCardProps {
   description: string;
   technologies: string[];
   githubLink: string;
+  githubBackendLink: string;
   viewProjectLink: string;
 }
 
@@ -26,6 +27,7 @@ function ProjectCard({
   description,
   technologies,
   githubLink,
+  githubBackendLink,
   viewProjectLink,
 }: ProjectCardProps) {
   return (
@@ -57,15 +59,28 @@ function ProjectCard({
         </div>
         <div className=''>
           <ul className='flex space-x-2'>
-            <li className='text-blue-500 space-x-2'>
+            <li className='text-blue-500 dark:text-white space-x-2 flex'>
               <a
                 href={githubLink}
                 className='hover:underline cursor-pointer flex space-x-2'
+                target='_blank'
               >
                 <span>Github</span> <img src={GithubIcon} className='h-6' />
               </a>
+              {githubBackendLink.length > 1 ? (
+                <a
+                  href={githubBackendLink}
+                  className='hover:underline cursor-pointer flex space-x-2'
+                  target='_blank'
+                >
+                  <span>backend Github</span>{" "}
+                  <img src={GithubIcon} className='h-6' />
+                </a>
+              ) : (
+                ""
+              )}
             </li>
-            <li className='text-blue-500 '>
+            <li className='text-blue-500 dark:text-white'>
               {viewProjectLink ? (
                 <a
                   href={viewProjectLink}
