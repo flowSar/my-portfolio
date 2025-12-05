@@ -1,5 +1,4 @@
 import ProjectCard from "./ProjectCard";
-import ProfolioImage from "../assets/images/profolio.png";
 import SkillHubImage from "../assets/images/skill-hub-home.png";
 import BlogPOstImage from "../assets/images/blog-post.png";
 import XcloneImage from "../assets/images/x-clone.png";
@@ -81,17 +80,6 @@ function Projects() {
       viewProjectLink: "",
       color: "green-300",
     },
-    // {
-    //   id: 126,
-    //   title: "My-Profolio",
-    //   image: ProfolioImage,
-    //   description:
-    //     "Personal portfolio website showcasing projects, skills, and achievements built with React and TailwindCSS.",
-    //   technologies: ["React.js", "TailwindCSS", "Html", "Mongodb"],
-    //   githubLink: "https://github.com/flowSar/my-portfolio",
-    //   viewProjectLink: "https://sar-profolio.vercel.app/",
-    //   color: "red-300",
-    // },
   ];
   return (
     <section id='projects'>
