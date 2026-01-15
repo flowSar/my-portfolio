@@ -4,6 +4,7 @@ import BlogPOstImage from "../assets/images/blog-post.png";
 import XcloneImage from "../assets/images/x-clone.png";
 import easyBillImage from "../assets/images/easy_bill.png";
 import fitnessAppImage from "../assets/images/fitness-app.png";
+import shopCreditImage from "../assets/images/shopCredit.png";
 
 function Projects() {
   const projects = [
@@ -79,6 +80,19 @@ function Projects() {
         "https://github.com/flowSar/fitness_app_backend_laravel",
       viewProjectLink: "",
       color: "green-300",
+    },
+    {
+      id: 129,
+      title: "SHopCredit-Ledger Book",
+      image: shopCreditImage,
+      description:
+        "ShopCredit is a mobile ledger app designed for small shops to manage customer credit efficiently. It allows store owners to create bills, track unpaid and partially paid balances, record payments, and maintain a clear credit ledger for each client",
+      technologies: ["Flutter", "Sqlite"],
+      githubLink: "",
+      githubBackendLink: "",
+      viewProjectLink:
+        "https://play.google.com/store/apps/details?id=com.exsar.ledger_book_knach",
+      color: "red-300",
     },
   ];
   return (

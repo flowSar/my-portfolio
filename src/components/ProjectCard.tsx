@@ -85,6 +85,7 @@ function ProjectCard({
                 <a
                   href={viewProjectLink}
                   className='hover:underline cursor-pointer'
+                  target='_blank'
                 >
                   View Project {"->"}
                 </a>
